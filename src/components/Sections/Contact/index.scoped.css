@@ -1,0 +1,96 @@
+#contact {
+    width: 100%;
+    background: var(--surface);
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.half {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__form {
+    margin: 0 14rem 0 1rem;
+    padding: 3rem 3rem 1rem;
+    border: inset 3px #985277ef;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+form {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+textarea {
+    overflow: auto;
+    box-shadow: none !important;
+}
+
+textarea, input {
+    max-width: 20rem !important;
+    width: 100%;
+}
+
+button {
+    margin: 2rem;
+    padding: 0.8rem 1.4rem;
+
+    border-radius: 10px;
+    color: var(--text-light);
+    background: var(--primary-grad);
+    font-family: inherit;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    box-shadow: var(--shadow);
+}
+
+.contact__links {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+    grid-column-gap: 5rem;
+    grid-row-gap: 4rem;
+}
+
+.card {
+    width: 140px;
+    height: 140px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.insta {
+    background-image: url("../../../assets/instagram.png");
+}
+
+.telegram {
+    background-size: 130%;
+    background-image: url("../../../assets/telegram.png");
+}
+
+.vkontakte {
+    background-image: url("../../../assets/vkontakte.png");
+}
+
+.gitlab {
+    background-image: url("../../../assets/gitlab.png");
+}

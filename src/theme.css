@@ -1,0 +1,14 @@
+.p-inputtext {
+    color: var(--text) !important;
+    border: none !important;
+    border-radius: 0;
+    border-bottom: 2px solid var(--text) !important;
+    transition: all 0.2s ease-in-out !important;
+    resize: none !important;
+    min-height: 2.5rem;
+}
+.p-inputtext:enabled:focus {
+    box-shadow: none !important;
+    border-color: var(--primary-2) !important;
+    outline: none !important;
+}

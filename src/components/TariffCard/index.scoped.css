@@ -1,0 +1,36 @@
+h3 {
+    width: 40%;
+    text-align: center;
+}
+
+.tariff__card {
+    width: 80%;
+    padding: 0 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    min-height: 180px;
+}
+
+.tariff__card * {
+    color: var(--text-light);
+}
+
+.main__part {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 3rem;
+    text-align: justify;
+}
+
+.card__price {
+    text-align: right;
+    font-size: x-large;
+}
+
+.line {
+    margin-top: -0.75rem;
+    margin-bottom: 1rem;
+    width: 40%;
+    height: 2px;
+    background: var(--text-light);
+}

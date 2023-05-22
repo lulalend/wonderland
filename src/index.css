@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+/* default constants */
+
+:root {
+    --background: #f7f7f7;
+    --background-form: #00000060;
+    --surface: #ffffff;
+    --text: #323232;
+    --text-light: #f7f7f7;
+    --border: #323232;
+    --grey: #dddddd;
+
+    --primary-1: #980264b6;
+    --primary-2: #3e1f47;
+    --primary-grad: linear-gradient(0deg, var(--primary-2) 0%, var(--primary-1) 100%);
+
+    --shadow: 0.05em 0.05em 0.5em rgba(0, 0, 0, .3);
+    --logo: url("./assets/icon.svg");
+    --greeting: url("./assets/background.png");
+
+    --dotted: url("./assets/dotted.svg");
+    --bold: url("./assets/bold.svg");
+}
+
+html,
+body {
+    min-height: 100%;
+    background: var(--background);
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    color: var(--text);
+    -webkit-tap-highlight-color: transparent;
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    transition: all ease-in 0.2s;
+    z-index: 5;
+    overflow-x: hidden;
+}
+
+ul {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-2);
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 2.1rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.button {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.5rem;
+}
+
+.border__button {
+    padding: 0.6rem 1.2rem;
+    border: 2px solid var(--text);
+    border-radius: 10px;
+    font-weight: 800;
+    user-select: none;
+    cursor: pointer;
+}
+
+.border__button:hover {
+    background-color: var(--text);
+    color: var(--background);
+}
+
+.border__button:hover .button__text,
+.border__button:hover .button__img {
+    color: var(--background);
+}
+
+/* ВАЖНА КОСТЫЛЬ, НЕ ТРОГАТЬ :) */
+tspan {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text);
+    fill: var(--text);
+    -webkit-tap-highlight-color: transparent;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 5px;
+    user-select: none;
+}
+
+.home__content svg {
+    position: absolute;
+    z-index: 0;
+    border-radius: 100%;
+}
