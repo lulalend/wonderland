@@ -53,7 +53,7 @@ function MainPage() {
             <Prices />
             <Footer />
 
-            <AuthForm active={authActive} setActive={setAuthActive} />
+                <AuthForm active={authActive} setActive={setAuthActive} />
         </AppBody>
     );
 }

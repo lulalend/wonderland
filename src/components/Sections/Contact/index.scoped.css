@@ -22,7 +22,8 @@
 }
 
 .contact__form {
-    margin: 0 14rem 0 1rem;
+    width: 40%;
+    margin: 0 auto;
     padding: 3rem 3rem 1rem;
     border: inset 3px #985277ef;
     border-radius: 20px;
@@ -93,4 +94,67 @@ button {
 
 .gitlab {
     background-image: url("../../../assets/gitlab.png");
+}
+
+@media screen and (max-width:1200px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+    
+    .half {
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    .contact__form {
+        width: 40%;
+    }
+
+    .contact__links {
+        grid-column-gap: 15rem;
+        grid-row-gap: 4rem;
+    }
+}
+
+@media screen and (max-width:998px) {
+
+    .contact__form {
+        width: 60%;
+    }
+
+    .half {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .contact__form {
+        width: 80%;
+    }
+
+    .half {
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .contact__form {
+        width: 70%;
+    }
+
+    .half {
+        margin-top: 4rem;
+    }
+
+    .contact__links {
+        /* margin-left: 1.5rem; */
+        grid-column-gap: 4rem;
+        grid-row-gap: 4rem;
+    }
 }
